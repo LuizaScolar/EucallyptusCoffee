@@ -387,12 +387,12 @@ footer .listFooter ul li a:hover {
 }
 
 .fazer-login input {
-    width: 90%;
+    width: 40%;
     padding: 8px;
 }
 
 .fazer-login button {
-    width: 70%;
+    width: 60%;
     font-size: 14px;
 }
 
