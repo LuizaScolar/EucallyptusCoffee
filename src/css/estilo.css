@@ -4,34 +4,12 @@ body {
   background-image: url(../assets/fundo.inicial.jpg); /* Usar a mesma imagem de fundo */
   background-size: cover;
   color: #3d230e; /* Cor consistente com o primeiro CSS */
-  font-family: 'Poppins', sans-serif; /* Usar a mesma fonte */
+  font-family: 'Playfair Display', serif;
   height: 100%;
   width: 100%;
-}
-
-.video-background {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-}
-
-.video-background video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover; /* Mantém o preenchimento total */
-  aspect-ratio: 16/9; /* Ajuste a proporção do vídeo */
-}
-
-.video-background .conteudo {
-  position: relative;
-  z-index: 1;
   text-align: center;
 }
+
 
 header {
   display: flex;
@@ -40,16 +18,15 @@ header {
   background-color: #5A361A; /* Cor consistente com o primeiro CSS */
   color: #FDDEC1; /* Cor do texto consistente */
   padding: 30px; /* Aumenta o padding para aumentar o header */
-  border-bottom: 4px solid #3d230e;
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 header .logo {
-  border: 3px solid #3d230e;
-  border-radius: 90px;
+  border-bottom: #FDDEC1 3px solid;;
   height: 50px; /* Ajuste a altura da logo */
   margin-left: 400px; /* Ajuste conforme necessário */
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+  border-radius: 30px;
 }
 
 header .logo:hover {
@@ -81,7 +58,6 @@ header .criar-conta:hover {
   padding: 20px;
   background: rgba(210, 179, 144, 0.701);
   border-radius: 30px;
-  border: 3px solid #3d230e;
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
   height: 455px;
 }
@@ -91,12 +67,33 @@ header .criar-conta:hover {
   padding: 50px;
 }
 
+.bem-vindo h2:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.bem-vindo p:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.bem-vindo h3:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.bem-vindo img:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
 .bem-vindo h2 {
   font-size: 30px;
   color: #3d230e;
   margin-top: -5px;
   background-color: rgba(210, 179, 144, 0.701);
   border-radius: 40px;
+  box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .bem-vindo h3 {
@@ -107,7 +104,7 @@ header .criar-conta:hover {
   border-radius: 40px;
   padding: 10px; /* Distância de 5px entre o texto e o fundo */
   display: inline-block; /* Para que o fundo se ajuste ao tamanho do texto */
-
+  box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .bem-vindo p {
@@ -116,33 +113,36 @@ header .criar-conta:hover {
   line-height: 1.6;
   color: #3d230e;
   background-color: rgba(210, 179, 144, 0.701);
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 5px; /* Distância de 5px entre o texto e o fundo */
   display: inline-block; /* Para que o fundo se ajuste ao tamanho do texto */
+  
+  box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .bem-vindo img {
   background-color: rgba(210, 179, 144, 0.701);
   border-radius: 10px;
   margin-bottom: -11px;
+  
+  box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .fazer-login {
   width: 40%;
   text-align: center;
-  
 }
 
 .fazer-login a {  
   text-decoration: none; /* Remove o sublinhado */
-  
   color: #3d230e;
   font-weight: bold;
-  
 }
 
 .fazer-login a:hover{
   text-decoration: underline;
+  transition: transform 0.5s;
+  transform: scale(1.1);
 }
 
 .fazer-login label {
@@ -153,25 +153,30 @@ header .criar-conta:hover {
   color: #3d230e;
 }
 
+.fazer-login label:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  text-decoration: underline;
+}
+
 .fazer-login input {
+  border: none;
   width: 60%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 3px solid #3d230e; /* Borda consistente */
   border-radius: 10px;
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5); 
 }
 
 .fazer-login input:hover{
   transition: transform 0.5s;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .fazer-login button {
   height: 50px;
   width: 40%;
   padding: 10px;
-  border: none;
   background-color: #5A361A; /* Cor de fundo consistente */
   color: #FDDEC1; /* Cor do texto consistente */
   font-size: 16px;
@@ -179,7 +184,7 @@ header .criar-conta:hover {
   cursor: pointer;
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
   margin-top: 40px;
-  border: 3px solid #3d230e; /* Borda consistente */
+  border: none;
 }
 
 .fazer-login button:hover {
@@ -192,7 +197,6 @@ header .criar-conta:hover {
 /* Estilo do rodapé */
 
 footer {
-  border-top: 3px solid #3d230e;
   background-color: #5A361A;
   color: #fff;
   display: flex;
@@ -204,8 +208,8 @@ footer {
 
 footer img {
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-  border-radius: 50px;
-  border: 3px solid #3d230e;
+  border-radius: 30px;
+  border-bottom: #FDDEC1 3px solid;
 }
 
 footer h6{
@@ -213,10 +217,16 @@ footer h6{
 }
 
 footer h2 {
+  border-radius: 10px;
+  border-bottom: #FDDEC1 3px solid;
+  color: #FDDEC1;
   margin: 10px 0;
-  border-radius: 40px;
-  border: 3px solid #3d230e;
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+}
+
+footer h2:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
 
 footer .listFooter {
@@ -247,11 +257,12 @@ footer .listFooter ul li a:hover {
 }
 
 .redesSociais img {
+  border-radius: 10px;
+  border: none;
   width: 40px;
   height: 40px;
   transition: transform 0.3s;
   box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-  border-radius: 10px;
 }
 
 .redesSociais img:hover {
@@ -339,9 +350,10 @@ footer img:hover {
 
 @media screen and (max-width: 768px) {
   body {
-      font-size: 14px;
+      font-size: 10px;
       padding: 0px;
   }
+
 
   header {
       flex-direction: column;

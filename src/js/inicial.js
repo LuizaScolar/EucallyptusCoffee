@@ -4,8 +4,8 @@ const imageElement = document.getElementById('image');
 
 // Cards alternativos
 const cards = [
-    './src/assets/coffee.velvet.jpeg',
-    './src/assets/delicia.caramelo.jpeg',
+    './src/assets/coffee.velvet.jpg',
+    './src/assets/delicia.caramelo.jpg',
     './src/assets/classic.coffee'
 ];
 

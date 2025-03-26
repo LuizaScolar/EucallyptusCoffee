@@ -27,118 +27,69 @@
         </a>
     </div>
 
-    <!-- Carrossel de cada dia da semana -->
-    <section class="carousel-container">
-        <h2>Segunda-Feira</h2>
-        <div class="carousel-wrapper">
-            <div class="carousel" id="segunda">
-                <div class="item"><img src="./src/assets/Café Mocha.png" alt="Produto 1"><p>Café Mocha</p></div>
-                <div class="item"><img src="./src/assets/Café com Leite.png" alt="Produto 2"><p>Café com Leite</p></div>
-                <div class="item"><img src="./src/assets/Café Gelado.png" alt="Produto 3"><p>Café Gelado</p></div>
-                <div class="item"><img src="./src/assets/bolo.redvelt.jpeg" alt="Produto 4"><p>Bolo RedVelvet</p></div>
-                <div class="item"><img src="./src/assets/cookie.jpeg" alt="Produto 5"><p>Cookie Classico</p></div>
-                <div class="item"><img src="./src/assets/cafe.sorvete.jpeg" alt="Produto 6"><p>Café com Sorvete</p></div>
+    <div class="menu-container">
+        <h1 class="menu-title">MENU</h1>
+        <p class="menu-subtitle">Coffee Shop</p>
+        <img src="./src/assets/CoalaLOGO.jpg" alt="Café" class="menu-image">
+
+        <div class="menu-columns">
+            <!-- Primeira Coluna -->
+            <div class="menu-column">
+                <section class="category">
+                    <h2>☕ COFFEE</h2>
+                    <div class="menu-items">
+                        <div class="iten"><span>Espresso</span> <span class="price">R$10</span></div>
+                        <div class="iten"><span>Double Espresso</span> <span class="price">R$15</span></div>
+                        <div class="iten"><span>Latte</span> <span class="price">R$17</span></div>
+                        <div class="iten"><span>Americano</span> <span class="price">R$16</span></div>
+                        <div class="iten"><span>Macchiato</span> <span class="price">R$20</span></div>
+                        <div class="iten"><span>Flat White</span> <span class="price">R$16</span></div>
+                        <div class="iten"><span>Cappuccino</span> <span class="price">R$20</span></div>
+                    </div>
+                </section>
+
+                <section class="category">
+                    <h2>🍵 TEA</h2>
+                    <div class="menu-items">
+                        <div class="iten"><span>Lemon Tea</span> <span class="price">R$15</span></div>
+                        <div class="iten"><span>Mango Tea</span> <span class="price">R$14</span></div>
+                        <div class="iten"><span>Jasmine</span> <span class="price">R$17</span></div>
+                        <div class="iten"><span>Green Tea</span> <span class="price">R$18</span></div>
+                        <div class="iten"><span>Mint Tea</span> <span class="price">R$16</span></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Segunda Coluna -->
+            <div class="menu-column">
+                <section class="category">
+                    <h2>🥤 NON-COFFEE</h2>
+                    <div class="menu-items">
+                        <div class="iten"><span>Hot Chocolate</span> <span class="price">R$12</span></div>
+                        <div class="iten"><span>Milkshake</span> <span class="price">R$25</span></div>
+                        <div class="iten"><span>Smoothie</span> <span class="price">R$13</span></div>
+                        <div class="iten"><span>Lemonade</span> <span class="price">R$18</span></div>
+                        <div class="iten"><span>Vanilla Milkshake</span> <span class="price">R$17</span></div>
+                    </div>
+                </section>
+
+                <section class="category">
+                    <h2>🍰 DESSERTS</h2>
+                    <div class="menu-items">
+                        <div class="iten"><span>Strawberry Waffle</span> <span class="price">R$23</span></div>
+                        <div class="iten"><span>Cinnamon Roll</span> <span class="price">R$25</span></div>
+                        <div class="iten"><span>Lemon Pie</span> <span class="price">R$15</span></div>
+                        <div class="iten"><span>Croissant</span> <span class="price">R$16</span></div>
+                        <div class="iten"><span>Chocolate Waffle</span> <span class="price">R$12</span></div>
+                        <div class="iten"><span>Brownies</span> <span class="price">R$14</span></div>
+                        <div class="iten"><span>Cheesecake</span> <span class="price">R$30</span></div>
+                        <div class="iten"><span>Chocolate Muffin</span> <span class="price">R$15</span></div>
+                    </div>
+                </section>
             </div>
         </div>
-        <button class="prev" onclick="moveCarousel(-1, 'segunda')">&#10094;</button>
-        <button class="next" onclick="moveCarousel(1, 'segunda')">&#10095;</button>
-    </section>
-
-    <section class="carousel-container">
-        <h2>Terça-Feira</h2>
-        <div class="carousel-wrapper">
-            <div class="carousel" id="terca">
-                <div class="item"><img src="./src/assets/cafe.normal.jpeg" alt="Produto 7"><p>Café Classico</p></div>
-                <div class="item"><img src="./src/assets/cappuchino.jpeg" alt="Produto 8"><p>Cappucino</p></div>
-                <div class="item"><img src="./src/assets/bolocenoura.jpeg" alt="Produto 9"><p>Bolo de Canoura com Chocolate</p></div>
-            <div class="item"><img src="./src/assets/bolo.chocolate.jpeg" alt="Produto 10"><p>Bolo de Chocolate</p></div>
-            <div class="item"><img src="./src/assets/cafe.redvelt.jpeg" alt="Produto 11"><p>Café RedVelvet</p></div>
-            <div class="item"><img src="./src/assets/browniw.jpeg" alt="Produto 12"><p>Brownie</p></div>
-        </div>
     </div>
-    <button class="prev" onclick="moveCarousel(-1, 'terca')">&#10094;</button>
-    <button class="next" onclick="moveCarousel(1, 'terca')">&#10095;</button>
-</section>
 
-<section class="carousel-container">
-    <h2>Quarta-Feira</h2>
-    <div class="carousel-wrapper">
-        <div class="carousel" id="quarta">
-            <div class="item"><img src="./src/assets/panquecas.mel.jpeg" alt="Produto 7"><p>Panquecas com Frutas e Mel</p></div>
-            <div class="item"><img src="./src/assets/pao.de.queijo.jpeg" alt="Produto 8"><p>Pão de Queijo</p></div>
-            <div class="item"><img src="./src/assets/petit.gateu.jpeg" alt="Produto 9"><p>Petit Gateau</p></div>
-            <div class="item"><img src="./src/assets/milshake.cafe.jpeg" alt="Produto 10"><p>Milkshake de Café</p></div>
-            <div class="item"><img src="./src/assets/cafe.sorvete.jpeg" alt="Produto 11"><p>Sobremesa Café e Sorvete</p></div>
-            <div class="item"><img src="./src/assets/cappuchino.jpeg" alt="Produto 12"><p>Cappucino</p></div>
-        </div>
-    </div>
-    <button class="prev" onclick="moveCarousel(-1, 'quarta')">&#10094;</button>
-    <button class="next" onclick="moveCarousel(1, 'quarta')">&#10095;</button>
-</section>
-
-<section class="carousel-container">
-    <h2>Quinta-Feira</h2>
-    <div class="carousel-wrapper">
-        <div class="carousel" id="quinta">
-            <div class="item"><img src="./src/assets/capuccino.pistache.jpeg" alt="Produto 7"><p>Cappucino de Pistache</p></div>
-            <div class="item"><img src="./src/assets/cafe.leite.jpeg" alt="Produto 8"><p>Café com Leite</p></div>
-            <div class="item"><img src="./src/assets/browniw.jpeg" alt="Produto 9"><p>Brownie</p></div>
-            <div class="item"><img src="./src/assets/cafe.normal.jpeg" alt="Produto 10"><p>Café Classico</p></div>
-            <div class="item"><img src="./src/assets/sorvete.baunilha.jpeg" alt="Produto 11"><p>Sorvete de Bauniha</p></div>
-            <div class="item"><img src="./src/assets/bolo.creme.cafe.jpeg" alt="Produto 12"><p>Bolo com Creme de Café</p></div>
-        </div>
-    </div>
-    <button class="prev" onclick="moveCarousel(-1, 'quinta')">&#10094;</button>
-    <button class="next" onclick="moveCarousel(1, 'quinta')">&#10095;</button>
-</section>
-
-<section class="carousel-container">
-    <h2>Sexta-Feira</h2>
-    <div class="carousel-wrapper">
-        <div class="carousel" id="sexta">
-            <div class="item"><img src="./src/assets/mousse.cafe.jpeg" alt="Produto 7"><p>Mousse de Café</p></div>
-            <div class="item"><img src="./src/assets/tiramisu.jpeg" alt="Produto 8"><p>Tiramisu de Café</p></div>
-            <div class="item"><img src="./src/assets/pudim.jpeg" alt="Produto 9"><p>Pudim</p></div>
-            <div class="item"><img src="./src/assets/cafe.leite.jpeg" alt="Produto 10"><p>Café com Leite</p></div>
-            <div class="item"><img src="./src/assets/sorvete.cafe.jpeg" alt="Produto 11"><p>Sorvete de Café</p></div>
-            <div class="item"><img src="./src/assets/croasant.jpeg" alt="Produto 12"><p>Croasant Doce</p></div>
-        </div>
-    </div>
-    <button class="prev" onclick="moveCarousel(-1, 'sexta')">&#10094;</button>
-    <button class="next" onclick="moveCarousel(1, 'sexta')">&#10095;</button>
-</section>
-
-<section class="carousel-container">
-    <h2>Sábado</h2>
-    <div class="carousel-wrapper">
-        <div class="carousel" id="sabado">
-            <div class="item"><img src="./src/assets/donalts.jpeg" alt="Produto 7"><p>Donalts de Chocolate</p></div>
-            <div class="item"><img src="./src/assets/macarrom.jpeg" alt="Produto 8"><p>Macarrons</p></div>
-            <div class="item"><img src="./src/assets/cafe.leite.jpeg" alt="Produto 9"><p>Café com Leite</p></div>
-            <div class="item"><img src="./src/assets/bolocenoura.jpeg" alt="Produto 10"><p>Bolo de Cenoura com Chocolate</p></div>
-            <div class="item"><img src="./src/assets/cookie.jpeg" alt="Produto 11"><p>Cookie</p></div>
-            <div class="item"><img src="./src/assets/cafe.redvelt.jpeg" alt="Produto 12"><p>Café RedVelvet</p></div>
-        </div>
-    </div>
-    <button class="prev" onclick="moveCarousel(-1, 'sabado')">&#10094;</button>
-    <button class="next" onclick="moveCarousel(1, 'sabado')">&#10095;</button>
-</section>
-
-<section class="carousel-container">
-    <h2>Domingo</h2>
-    <div class="carousel-wrapper">
-        <div class="carousel" id="domingo">
-            <div class="item"><img src="./src/assets/milshake.cafe.jpeg" alt="Produto 7"><p>Milkshake de Café</p></div>
-            <div class="item"><img src="./src/assets/panqueca.docedeleite.jpeg" alt="Produto 8"><p>Panqueca com Doce de Leite</p></div>
-            <div class="item"><img src="./src/assets/cafe.normal.jpeg" alt="Produto 9"><p>Café Classico</p></div>
-            <div class="item"><img src="./src/assets/bannof.jpeg" alt="Produto 10"><p>Bannof</p></div>
-            <div class="item"><img src="./src/assets/cafe.sorvete.jpeg" alt="Produto 11"><p>Sobremesa Café com Sorvete</p></div>
-            <div class="item"><img src="./src/assets/croasant.jpeg" alt="Produto 12"><p>Croasant Doce</p></div>
-        </div>
-    </div>
-    <button class="prev" onclick="moveCarousel(-1, 'domingo')">&#10094;</button>
-    <button class="next" onclick="moveCarousel(1, 'domingo')">&#10095;</button>
-</section>
 <footer>
     <div>
         <img src="./src/assets/icone (1).png" alt="icone.footer">

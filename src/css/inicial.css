@@ -1,10 +1,17 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     color: #3d230e;
     margin: 0;
     padding: 0;
     background-image: url(../assets/fundo.inicial.jpg);
     height: 1px;
+}
+
+.fundo video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 
@@ -14,6 +21,7 @@ body {
     align-items: center;
     padding: 30px; /* Aumenta o padding para aumentar o header */
     background-color: #5A361A;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .topo :hover{
@@ -22,16 +30,15 @@ body {
 }
 
 .logo {
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border: 3px solid #3d230e;
-    border-radius: 90px;
+    border-bottom: #FDDEC1 3px solid;;
+    height: 50px; /* Ajuste a altura da logo */
+    margin-left: 400px; /* Ajuste conforme necessário */
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+    border-radius: 30px;
 }
 
 .logo :hover{
+    text-decoration: underline;
     transition: transform 0.5s;
     transform: scale(1.1);
 }
@@ -39,12 +46,10 @@ body {
 nav {
     background-color: #B26F42;
     padding: 10px 0;
-    border: 3px solid #3d230e;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 nav :hover{
-    
     transition: transform 0.5s;
     transform: scale(1.1);
 }
@@ -72,8 +77,9 @@ nav a {
 nav a:hover {
     background-color: #FDDEC1;
     color: #3d230e;
+    text-decoration: underline;
     
-    border: 3px solid #3d230e;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .usuario-icone {
@@ -85,7 +91,7 @@ nav a:hover {
 .usuario-icone img {
     width: 40px;
     height: 40px;
-    border: 3px solid #3d230e;
+    border-bottom: #FDDEC1 3px solid;
     border-radius: 10px;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
@@ -93,14 +99,6 @@ nav a:hover {
 .usuario-icone :hover{
     transition: transform 0.5s;
     transform: scale(1.1);
-}
-
-.fundo video {
-    border-bottom: 10px solid #3d230e;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 main {
@@ -116,7 +114,6 @@ main {
     border-radius: 50px;
     margin: 20px 20px; /* Remove margens */
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-    border: 3px solid #3d230e;
     display: inline-block;
     padding: 0px 30px;
 }
@@ -124,16 +121,22 @@ main {
 .title:hover{
     transition: transform 0.5s;
     transform: scale(1.1);
+    color: #3d230e;
+    background-color: #FDDEC1;
 }
 
 .texto:hover{
     transition: transform 0.5s;
     transform: scale(1.1);
+    color: #3d230e;
+    background-color: #FDDEC1;
 } 
 
 .text2:hover{
     transition: transform 0.5s;
     transform: scale(1.1);
+    color: #3d230e;
+    background-color: #FDDEC1;
 }
 
 .title{
@@ -150,12 +153,13 @@ background-color: #5A361A; /* Cor de fundo */
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    border: none;
 }
 
 .barra {
     width: 400px; /* Aumenta a largura da barra de pesquisa */
     padding: 15px; /* Aumenta o padding da barra de pesquisa */
-    border: 3px solid #3d230e;
+    border: none;
     border-radius: 20px;
     margin-right: 10px;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
@@ -169,10 +173,10 @@ background-color: #5A361A; /* Cor de fundo */
 
 
 .buscar {
+    border: none;
     background-color: #5A361A;
     color: #FDDEC1;
     padding: 15px 30px; /* Aumenta o padding do botão buscar */
-    border: 3px solid #3d230e;
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -183,7 +187,6 @@ background-color: #5A361A; /* Cor de fundo */
 .buscar:hover {
     background-color: #FDDEC1;
     color: #3d230e;
-    
     transition: transform 0.5s;
     transform: scale(1.1);
 }
@@ -201,7 +204,6 @@ background-color: #5A361A; /* Cor de fundo */
     transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
     display: inline-block; /* Para que o botão se comporte como um bloco */
     margin: 20px auto; /* Centraliza o botão */
-    border: 3px solid #3d230e;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
@@ -223,13 +225,16 @@ background-color: #5A361A; /* Cor de fundo */
 
 .image {
     transition: transform 0.5s ease; /* Transição suave */
-    width: 90%; /* Ajuste conforme necessário */
-    height: 100%; /* Mantém a proporção da imagem */
+    width: 80%; /* Ajuste conforme necessário */
+    height: 90%; /* Mantém a proporção da imagem */
+    border-radius: 30px;
+    border: #3d230e 3px solid;;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .image:hover{
     transition: transform 0.5s;
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .image.move-left {
@@ -328,8 +333,8 @@ background-color: #5A361A; /* Cor de fundo */
     font-size: 1.2rem;
 }
 
+
 footer {
-    text-align: center;
     background-color: #5A361A;
     color: #fff;
     display: flex;
@@ -337,73 +342,82 @@ footer {
     padding: 20px;
     flex-wrap: wrap;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-footer img {
+    text-align: center;
+  }
+  
+  footer img {
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-    border-radius: 50px;
-    border: 3px solid #3d230e;
-}
-
-footer h6{
+    border-radius: 30px;
+    border-bottom: #FDDEC1 3px solid;
+  }
+  
+  footer h6{
     margin-left: 10px;
-}
-
-footer h2 {
+  }
+  
+  footer h2 {
+    border-radius: 10px;
+    border-bottom: #FDDEC1 3px solid;
+    color: #FDDEC1;
     margin: 10px 0;
-    border-radius: 40px;
-    border: 3px solid #3d230e;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-footer .listFooter {
+  }
+  
+  footer h2:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+  
+  footer .listFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-footer .listFooter ul {
+  }
+  
+  footer .listFooter ul {
     list-style: none;
     padding: 0;
-}
-
-footer .listFooter ul li a {
+  }
+  
+  footer .listFooter ul li a {
     color: #FDDEC1;
     text-decoration: none;
-}
-
-footer .listFooter ul li a:hover {
+  }
+  
+  footer .listFooter ul li a:hover {
     text-decoration: underline;
     color: #B26F42;
-}
-
-.redesSociais {
+  }
+  
+  .redesSociais {
     display: flex;
     gap: 20px;
     
-}
-
-.redesSociais img {
+  }
+  
+  .redesSociais img {
+    border-radius: 10px;
+    border: none;
     width: 40px;
     height: 40px;
     transition: transform 0.3s;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-    border-radius: 10px;
-}
-
-.redesSociais img:hover {
+  }
+  
+  .redesSociais img:hover {
     transform: scale(1.1);
-}
-
-footer img:hover {
+  }
+  
+  footer img:hover {
     transition: transform 0.5s;
     transform: scale(1.1);
   }
-
 /* Responsividade */
 @media (max-width: 768px) {
 
     * {
+        
+        font-size: 10px;
         box-sizing: border-box; /* Inclui padding e border na largura e altura total */
     }
     
@@ -416,14 +430,14 @@ footer img:hover {
     }
 
     .buscar {
-        width: 40%;
+        width: 20%;
     }
 
     .produtos img, .produtos button {
         margin: 0; /* Remove margens */
         padding: 0; /* Remove padding */
         display: block; /* Para imagens, isso pode ajudar a evitar espaços em branco */
-        max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+        max-width: 1000%; /* Garante que as imagens não ultrapassem o contêiner */
         height: auto; /* Mantém a proporção das imagens */
     }
 

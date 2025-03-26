@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
     color: #3d230e;
     margin: 0;
     padding: 0;
@@ -8,30 +8,39 @@ body {
     text-align: center;
 }
 
+.fundo video {
+    border-bottom: 10px solid #3d230e;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+}
+
+
 .topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px; /* Aumenta o padding para aumentar o header */
     background-color: #5A361A;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
-.topo :hover {
+.topo :hover{
     transition: transform 0.5s;
     transform: scale(1.1);
 }
 
 .logo {
-    width: 400px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border: 3px solid #3d230e;
-    border-radius: 90px;
+    border-bottom: #FDDEC1 3px solid;;
+    height: 50px; /* Ajuste a altura da logo */
+    margin-left: 400px; /* Ajuste conforme necessário */
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+    border-radius: 30px;
 }
 
-.logo :hover {
+.logo :hover{
+    text-decoration: underline;
     transition: transform 0.5s;
     transform: scale(1.1);
 }
@@ -39,11 +48,10 @@ body {
 nav {
     background-color: #B26F42;
     padding: 10px 0;
-    border: 3px solid #3d230e;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
-nav :hover {
+nav :hover{
     transition: transform 0.5s;
     transform: scale(1.1);
 }
@@ -55,6 +63,7 @@ nav ul {
     gap: 30px;
     padding: 0;
     margin: 0;
+    
 }
 
 nav a {
@@ -64,12 +73,15 @@ nav a {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
+
 }
 
 nav a:hover {
     background-color: #FDDEC1;
     color: #3d230e;
-    border: 3px solid #3d230e;
+    text-decoration: underline;
+    
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
 .usuario-icone {
@@ -81,12 +93,12 @@ nav a:hover {
 .usuario-icone img {
     width: 40px;
     height: 40px;
-    border: 3px solid #3d230e;
+    border-bottom: #FDDEC1 3px solid;
     border-radius: 10px;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
 
-.usuario-icone :hover {
+.usuario-icone :hover{
     transition: transform 0.5s;
     transform: scale(1.1);
 }
@@ -95,6 +107,144 @@ main {
     padding: 20px;
     text-align: center;
 }
+
+.cardapio-container {
+    text-align: center;
+    width: 420px;
+}
+
+.header {
+    text-transform: lowercase;
+    font-family: 'Playfair Display', serif;
+    color: #7a3e12;
+}
+/*hsl(43, 86%, 94%)*/
+.menu-container {
+    background: #FDDEC1;
+    width: 1045px;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: #3d230e 3px solid;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+}
+
+.menu-container h1:hover{
+    text-decoration: underline;
+    color: #B26F42;
+}
+
+.menu-container img{
+    border: #3d230e 3px solid;
+    
+}
+
+.menu-container img:hover{
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
+.menu-container p:hover{
+    text-decoration: underline;
+    color: #B26F42;
+  
+}
+
+.menu-container h2:hover{
+  text-decoration: underline;
+  color: #B26F42;
+}
+
+.iten:hover{ 
+  text-decoration: underline;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+  background-color: #a37e5f;
+  color: #3d230e;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Estilizando o título */
+.menu-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #5a3823;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.menu-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #5a3823;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Imagem superior direita */
+.menu-image {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Layout das colunas */
+.menu-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.menu-column {
+    flex: 1;
+    width: 100%;
+}
+
+/* Categorias do menu */
+.category {
+    margin-bottom: 30px;
+}
+
+.menu-container h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #5a3823;
+    border-bottom: 2px solid #5a3823;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Lista de itens */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+}
+
+/* Estilizando cada item */
+.iten {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Preço */
+.price {
+    font-weight: bold;
+}
+
 
 .texto, .text2, .title {
     background-color: #5A361A; /* Cor de fundo */
@@ -128,101 +278,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-.carousel {
-    display: flex;
-    gap: 10px;
-    width: 200%;
-    transition: transform 0.5s ease-in-out; /* Transição suave */
-}
-
-.carousel.animate {
-    transition: transform 0.5s ease-in-out; /* Transição suave */
-}
-
-.carousel-container {
-    background-color: #FDDEC1;
-    border: #3d230e 3px solid;
-    text-align: center;
-    margin: 0px; /* Adiciona margem superior e inferior */
-    padding: 0px;
-    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-.carousel-container h2 {
-    background-color: #B26F42;
-    color: #FDDEC1;
-    display: inline-block;
-    padding: 5px 15px;
-    border: #3d230e 3px solid;
-    border-radius: 10px;
-    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-.carousel-container h2:hover {
-    transition: transform 0.5s;
-    transform: scale(1.1);
-}
-
-.carousel-container {
-    margin: 20px 0;
-    padding: 10px;
-}
-
-.carousel-wrapper {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    gap: 10px;
-    width: 200%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.item {
-    background-color: #FDDEC1;
-    padding: 10px;
-    border-radius: 10px;
-    min-width: 15%;
-    flex-shrink: 0;
-    text-align: center;
-    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-.item {
-    width: 200px; /* Largura fixa para os itens */
-    height: 200px; /* Altura fixa para manter tudo igual */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Evita que a imagem ultrapasse os limites */
-    background-color: #B26F42;
-    border: #3d230e 3px solid;
-    border-radius: 10px;
-    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-.item img {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.png {
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-.item p {
-    margin-top: 5px;
-    font-weight: bold;
-}
 
 .intro {
     margin: 20px;
@@ -247,9 +302,7 @@ button:hover {
     text-align: left;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
 }
-
 footer {
-    text-align: center;
     background-color: #5A361A;
     color: #fff;
     display: flex;
@@ -257,70 +310,84 @@ footer {
     padding: 20px;
     flex-wrap: wrap;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-footer img {
+    text-align: center;
+  }
+  
+  footer img {
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-    border-radius: 50px;
-    border: 3px solid #3d230e;
-}
-
-footer h6 {
+    border-radius: 30px;
+    border-bottom: #FDDEC1 3px solid;
+  }
+  
+  footer h6{
     margin-left: 10px;
-}
-
-footer h2 {
+  }
+  
+  footer h2 {
+    border-radius: 10px;
+    border-bottom: #FDDEC1 3px solid;
+    color: #FDDEC1;
     margin: 10px 0;
-    border-radius: 40px;
-    border: 3px solid #3d230e;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-}
-
-footer .listFooter {
+  }
+  
+  footer h2:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+  
+  footer .listFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-footer .listFooter ul {
+  }
+  
+  footer .listFooter ul {
     list-style: none;
     padding: 0;
-}
-
-footer .listFooter ul li a {
+  }
+  
+  footer .listFooter ul li a {
     color: #FDDEC1;
     text-decoration: none;
-}
-
-footer .listFooter ul li a:hover {
+  }
+  
+  footer .listFooter ul li a:hover {
     text-decoration: underline;
     color: #B26F42;
-}
-
-.redesSociais {
+  }
+  
+  .redesSociais {
     display: flex;
     gap: 20px;
-}
-
-.redesSociais img {
+    
+  }
+  
+  .redesSociais img {
+    border-radius: 10px;
+    border: none;
     width: 40px;
     height: 40px;
     transition: transform 0.3s;
     box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
-    border-radius: 10px;
-}
-
-.redesSociais img:hover {
+  }
+  
+  .redesSociais img:hover {
     transform: scale(1.1);
-}
-
-footer img:hover {
+  }
+  
+  footer img:hover {
     transition: transform 0.5s;
     transform: scale(1.1);
-}
+  }
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+    *{
+        font-size: 10px;
+    }
+
     .logo {
         width: 70%; /* Ajusta a largura da logo */
     }
@@ -351,4 +418,114 @@ footer img:hover {
         width: 150px; /* Ajusta a largura dos itens do carousel */
         height: 150px; /* Ajusta a altura dos itens do carousel */
     }
+    /* Responsividade para o cardápio */
+@media (max-width: 768px) {
+
+    *{
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 70%; /* Ajusta a largura da logo */
+    }
+
+    main {
+        padding: 10px; /* Ajusta o padding do main */
+    }
+
+    .texto, .text2, .title {
+        font-size: 1.5em; /* Reduz o tamanho da fonte */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    button {
+        font-size: 16px; /* Reduz o tamanho da fonte dos botões */
+        padding: 8px 16px; /* Ajusta o padding dos botões */
+    }
+
+    .carousel-container {
+        margin: 10px 0; /* Ajusta a margem do container do carousel */
+    }
+
+    .carousel-wrapper {
+        width: 100%; /* Ajusta a largura do wrapper do carousel */
+    }
+
+    .item {
+        width: 150px; /* Ajusta a largura dos itens do carousel */
+        height: 150px; /* Ajusta a altura dos itens do carousel */
+    }
+
+    /* Ajustes no cardápio para dispositivos móveis */
+    .menu-container {
+        width: 100%; /* Ajusta a largura do menu */
+        margin: 10px; /* Ajusta a margem do menu */
+        padding: 20px; /* Ajusta o padding do menu */
+    }
+
+    .menu-columns {
+        flex-direction: column; /* Empilha as colunas verticalmente em telas pequenas */
+        gap: 20px; /* Aumenta o espaçamento entre as colunas */
+    }
+
+    .menu-column {
+        width: 100%; /* Garante que as colunas ocupem toda a largura */
+    }
+
+    .menu-items {
+        gap: 15px; /* Aumenta o espaçamento entre os itens */
+        font-size: 16px; /* Reduz o tamanho da fonte dos itens */
+    }
+
+    .iten {
+        flex-direction: column; /* Exibe os itens de forma empilhada em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+        gap: 10px; /* Aumenta o espaço entre o nome do item e o preço */
+    }
+
+    .price {
+        font-size: 16px; /* Reduz o tamanho da fonte do preço */
+    }
+
+    .menu-title {
+        font-size: 32px; /* Reduz o tamanho do título do menu */
+    }
+
+    .menu-subtitle {
+        font-size: 18px; /* Reduz o tamanho do subtítulo do menu */
+    }
+
+    /* Ajusta a imagem do menu */
+    .menu-image {
+        width: 120px; /* Reduz a largura da imagem */
+        height: 120px; /* Reduz a altura da imagem */
+    }
+
+    .menu-container h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+
+    .menu-container h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte dos subtítulos */
+    }
+}
+/* Adiciona um contêiner flex para centralizar o cardápio */
+.menu-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+    padding: 20px;
+}
+
+.menu-container {
+    width: 80%; /* Ajusta a largura do cardápio */
+    max-width: 1200px; /* Limita a largura máxima do cardápio */
+    margin: 0; /* Remove margens */
+    padding: 40px; /* Ajuste o padding conforme necessário */
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(76, 26, 0, 1.5);
+    position: relative;
+    border: #3d230e 3px solid;
+}
 }
